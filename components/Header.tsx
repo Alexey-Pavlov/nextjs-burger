@@ -1,4 +1,5 @@
 import {FaHamburger} from 'react-icons/fa'
+import Link from 'next/link'
 
 const Header = () => {
     return (<header>
@@ -6,10 +7,10 @@ const Header = () => {
             <FaHamburger/>
         </div>
         <nav>
-            <a href="">Home</a>
-            <a href="">About us</a>
-            <a href="">Testimonials</a>
-            <a href="">Burgers</a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About us</Link>
+            <Link href="/review">Testimonials</Link>
+            <Link href="/burgers">Burgers</Link>
         </nav>
     </header>)
 }
