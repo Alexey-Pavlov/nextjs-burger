@@ -26,7 +26,7 @@ const Burgers = ({burgers}: { burgers: Burger[] }) => {
             return (<Link href={`/burgers/${burger.id}`} key={burger.id} className={styles.burgerCard}>
                 <div className={styles.imageContainer}>
                     <Image src={`${burger.image}`} alt={`${burger.name}`}
-                           fill />
+                           fill/>
                 </div>
                 <div>
                     <h3>{burger.name}</h3>

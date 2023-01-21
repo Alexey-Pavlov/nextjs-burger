@@ -17,9 +17,7 @@ export const getStaticPaths = async () => {
     }
 }
 
-
-
-export const getStaticProps = async (context: {params: {id: string}}) => {
+export const getStaticProps = async (context: { params: { id: string } }) => {
     const id = context.params.id;
 
     const res = await fetch(`http://localhost:5000/items/${id}`);
@@ -32,7 +30,7 @@ export const getStaticProps = async (context: {params: {id: string}}) => {
     }
 }
 
-const Details = ({burger}: {burger: Burger}) => {
+const Details = ({burger}: { burger: Burger }) => {
     console.log('burger: ', burger)
     return (<div className={styles.singleBurger}>
         <h1>{burger.name}</h1>
