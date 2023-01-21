@@ -3,7 +3,7 @@ import styles from '../../styles/Burgers.module.css'
 import Image from "next/image";
 
 export const getStaticPaths = async () => {
-    const res = await fetch('http://localhost:5000/items');
+    const res = await fetch('http://localhost:3001/items');
     const data: Burger[] = await res.json();
 
     const paths = data.map(burger => {
@@ -20,7 +20,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context: { params: { id: string } }) => {
     const id = context.params.id;
 
-    const res = await fetch(`http://localhost:5000/items/${id}`);
+    const res = await fetch(`http://localhost:3001/items/${id}`);
     const data: Burger[] = await res.json();
 
     return {
