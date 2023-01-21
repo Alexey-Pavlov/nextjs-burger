@@ -1,6 +1,8 @@
 .imageContainer {
     max-width: 150px;
     position: relative;
+    height: 150px;
+    width: 150px;
 }
 
 .burgerCard {

@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
     }
 }
 
-type Burger = {
+export type Burger = {
     name: string; image: string; desc: string; price: number; id: string;
 }
 
