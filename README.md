@@ -6,6 +6,8 @@ This is a [Next.js](https://nextjs.org/) study project bootstrapped with [`creat
 - Next.js
 - React.js
 - JSON-server
+- Typescript
+- ESLint
 
 ## What I Learned
 Through this project, I learned how to use the following concepts and technologies in Next.js:
